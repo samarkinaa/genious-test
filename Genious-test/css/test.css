@@ -6,28 +6,58 @@
   border: 1px dotted black;
 }
 .parent {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   padding: 20px;
   border: 1px dotted black;
 }
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
 .item.red {
-  position: relative;
   width: 150px;
   height: 150px;
   background-color: rgb(240, 22, 22);
-  overflow: auto;
+  transform: translateX(-20px);
+  transition: background-color 1s, color 1s, transform 1s;
+}
+.item.red:hover {
+  transform: translateX(0px);
+  background-color: rgb(224, 134, 184);
+  color: black;
 }
 .item.green {
   width: 100px;
   height: 100px;
   background-color: rgb(12, 129, 28);
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: 5;
+  /* transform: rotate(0.5turn); */
 }
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .item.blue {
   width: 50px;
   height: 50px;
   background-color: rgb(8, 51, 243);
+  transform: scale(0.5);
 }
-.section-title {
-  position: sticky;
-  top: 0;
-  background-color: blueviolet;
+.item.orange {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(240, 127, 22);
+  transform: skew(20deg, 20deg);
 }
