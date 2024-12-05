@@ -101,7 +101,15 @@ ul {
   background-color: transparent;
   border: 2px solid var(--color-brand-normal);
 }
+/* .button:disabled {
+  color: gray;
+  background-color: darkgray;
+  border-color: currentColor;
+  cursor: not-allowed;
+} */
+
 /*Link*/
+
 .link {
   color: var(--color-primary-light);
   text-decoration: none;
@@ -485,7 +493,12 @@ ul {
   border-color: var(--color-brand-normal);
   outline: none;
 }
-
+.form-input:disabled {
+  border-color: lightgray;
+}
+.form-input:disabled::placeholder {
+  color: lightgray;
+}
 .form-input::placeholder {
   color: #a18268;
   font-size: 16px;
@@ -510,3 +523,31 @@ ul {
   color: var(--color-primary-dark);
   text-underline-offset: 2px;
 }
+.form-name {
+  font-size: 64px;
+  line-height: 1.5;
+  text-align: center;
+}
+/* .checkbox {
+  position: relative;
+}
+.checkbox-input {
+  appearance: none;
+}
+.checkbox-input:checked + .checkbox-label::before {
+  background-color: var(--color-secondary-dark);
+}
+.checkbox-label {
+  padding-left: 24px;
+}
+.checkbox-label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 5px;
+  border: 1px solid var(--color-primary-dark);
+  border-radius: 2px;
+  content: '';
+} */
