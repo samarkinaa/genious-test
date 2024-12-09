@@ -1,32 +1,32 @@
 @import './utils/fonts';
 @import './utils/variables';
-
 @import './base';
-
+@import './utils/texts';
 @import './utils/utils';
+@import './utils/mixins';
 
-@import './components/bottons';
-@import './components/links';
-@import './components/headeer';
-@import './components/hero-section';
 @import './components/adventages';
-@import './components/traditions-section';
-@import './components/chefs-section';
-@import './components/formats-section';
+@import './components/bottons';
 @import './components/carousel';
+@import './components/chef-card';
+@import './components/chefs-section';
 @import './components/contact-section';
 @import './components/footer';
+@import './components/form-terms';
+@import './components/formats-section';
+@import './components/format-card';
+@import './components/header';
+@import './components/hero-section';
+@import './components/input';
+@import './components/links';
+@import './components/mobile-menu';
 @import './components/modal';
-@import './components/form';
-
-@import './utils/mixins';
-.section {
-    padding: 48px 0;
-}
+@import './components/section';
+@import './components/traditions-section';
 
 .container {
-    width: 100%;
-    max-width: 1288px;
-    margin: auto;
-    padding: 0 24px;
+  width: 100%;
+  max-width: 1288px;
+  margin: auto;
+  padding: 0 24px;
 }
